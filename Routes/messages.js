@@ -9,7 +9,7 @@ router.get('/users/get-all-messages', isLoggedIn, GetMessages)
 router.get('/messages/search', isLoggedIn, SearchMessages)
 router.post('/users/send-a-message', isLoggedIn, SendMessage)
 router.post('/messages/report/:id', isLoggedIn, ReportMessageAbuse)
-router.post('/messages/moderate', isAdmin, ModerateMessage)
+router.post('/messages/moderate/:id', isAdmin, ModerateMessage)
 
 
 
