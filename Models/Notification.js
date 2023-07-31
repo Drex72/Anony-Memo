@@ -8,11 +8,11 @@ const Schema = Mongoose.Schema
 
 const notificationSchema = new Schema({
   to: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Mongoose.Schema.Types.ObjectId,
     ref: 'User'
   },
   from: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Mongoose.Schema.Types.ObjectId,
     ref: 'User'
   },
   content: {
